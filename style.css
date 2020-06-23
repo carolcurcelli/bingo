@@ -1,0 +1,61 @@
+* {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    text-align:center;
+    font-family: sans-serif;
+    padding:20px;
+}
+
+#currentNumber {
+    width: 100px;
+    height: 100px;
+    background: #ececec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto 10px;
+    font-size:40px;
+}
+
+#oldNumbers {
+    margin:10px auto 0;
+    max-width: 300px;
+}
+
+#generateNumber {
+	border: 0;
+	padding: 15px 30px;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 10px;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: Arial;
+	background: linear-gradient(270deg, #5f2c82, #ee38bf, #ff5858, #49a09d, #1b5ece, #5f2c82, #ee38bf, #ff5858);
+	background-size: 400% 400%;
+    animation: rainbowEffect 30s ease infinite;
+    cursor:pointer;
+}
+@keyframes rainbowEffect {
+	0%   { background-position: 0% center; }
+	100% { background-position: 100% center; }
+}
+
+#retry {
+    display:none;
+    margin: 0 auto;
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#retry.new-game {
+    display: block;
+}
